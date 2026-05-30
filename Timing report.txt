@@ -1,0 +1,19 @@
+Static Timing Analysis Report
+
+Clock Period: 6 ns
+
+Path:
+FF → Adder → Logic → FF
+
+Arrival Time = 1 + 4 + 2 = 7 ns
+Required Time = 6 - 1 = 5 ns
+
+Slack = 5 - 7 = -2 ns
+
+Result: ❌ Setup Violation
+
+Fix:
+Applied pipelining to reduce delay per stage
+
+New Clock Period: 8 ns
+Slack: +1 ns ✅
